@@ -11,20 +11,32 @@ html{
     font-family: sans-serif;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
 .big-container{
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
 }
 
 .mid-container{
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 50px);
 }
 /* Fine common */
 
+
+
+
+
 /* Inizio header  */
-header{
+.header{
 height: 100px;
 width: 100%;
+position: fixed;
+top: 0;
+right: 0;
 }
 /* fine header  */
 
@@ -33,6 +45,7 @@ main{
 height: calc(100% - 100px);
 width: 100%;
 flex-direction: column;
+padding-top: 100px;
 }
 
 .nav-main{
@@ -45,8 +58,8 @@ flex-direction: column;
 }
 
 .main-content{
-    height: calc(100% - 100px);
     width: 100%;
+    height: calc(100% - 100px);
 }
 
 .main-content-item{
@@ -71,8 +84,9 @@ justify-content: center;
 
 
 aside{
-width: 10vw;
+width: 50px;
 height: 100%;
+z-index: 999;
 }
 /* fine aside  */
 
@@ -83,7 +97,7 @@ footer{
 height: 100px;
 position: fixed;
 bottom: 0;
-width: 100vw;
+width: 100%;
 }
 
 /* Media queries */
