@@ -340,17 +340,28 @@ justify-self: flex-end;
     padding-right: 60px;
 }
 
-.padding-top-20{
-    padding-top: 20px;
+.padding-top-60{
+    padding-top: 60px;
 }
 
 .padding-top-30{
     padding-top: 30px;
 }
 
-.padding-top-60{
-    padding-top: 60px;
+.padding-top-20{
+    padding-top: 20px;
 }
+
+.padding-top-10{
+    padding-top: 10px;
+}
+
+
+.padding-top-5{
+    padding-top: 5px;
+}
+
+
 
 .padding-bottom-60{
     padding-bottom: 60px;
@@ -358,6 +369,21 @@ justify-self: flex-end;
 
 .padding-bottom-30{
     padding-bottom: 30px;
+}
+
+
+.padding-bottom-20{
+    padding-bottom: 20px;
+}
+
+
+.padding-bottom-10{
+    padding-bottom: 10px;
+}
+
+
+.padding-bottom-5{
+    padding-bottom: 5px;
 }
 
 .padding-0{
@@ -444,34 +470,38 @@ justify-self: flex-end;
 
 /* -fontsize */
 
-.fontsize-20px{
+.font-size-20{
     font-size: 20px;
 }
 
-.fontsize-25px{
+.font-size-25{
     font-size: 25px;
 }
 
 
 
-.fontsize-16px{
+.font-size-16{
     font-size: 16px;
 }
 
-.fontsize-14px{
+.font-size-14{
     font-size: 14px;
 }
 
-.fontsize-13px{
+.font-size-13{
     font-size: 13px;
 }
 
+.font-size-12{
+    font-size: 12px;
+}
 
-.fontsize-30px{
+
+.font-size-30{
     font-size: 30px;
 }
 
-.fontsize-35px{
+.font-size-35{
     font-size: 35px;
 }
 
