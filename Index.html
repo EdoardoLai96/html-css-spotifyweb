@@ -10,12 +10,13 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="big-container flex bg-brownish">
 
         <!-- Inizio side bar -->
-        <aside class= "flex bg-dark-red pos-relative flex flex-column">
+        <aside class= "flex pos-relative flex flex-column bg-black">
             <!-- Inizio aside-top -->
             <div class="aside-top flex flex-column">
                 <!-- item  -->
@@ -25,30 +26,43 @@
                 
                 <!-- item  -->
                 <div class="aside-top-item">
-                    <img src="./img/home.svg" alt="spotify logo">
+                    <img src="./img/home.svg" alt="spotify search">
                 </div>
 
                 <!-- item  -->
                 <div class="aside-top-item">
-                    <img src="./img/search.svg" alt="spotify logo">
+                    <img src="./img/search.svg" alt="spotify home">
                 </div>
 
                 <!-- item  -->
                 <div class="aside-top-item">
-                    <img src="./img/libreria.svg" alt="spotify logo">
+                    <img src="./img/libreria.svg" alt="spotify library">
                 </div>
 
             </div>
             <!-- Fine aside-top -->
 
+            <!-- Inizio aside-bottom  -->
             <div class="aside-bottom flex flex-column">
+                <!-- item  -->
+                <div id="download" class="aside-bottom-item padding-bottom-20">
+                    <img  src="./img/download.svg" alt="spotify download">
+                </div>
+
+                <!-- item  -->
+                <div id="account" class="aside-bottom-item padding-bottom-10">
+                    <img src="./img/profile.svg" alt="spotify download">
+                </div>
+
 
             </div>
+            <!-- Fine aside-bottom  -->
+
         </aside>
         <!-- Fine side bar -->
 
         <!-- Inizio parte principale (header + main)  -->
-        <div class="mid-container flex bg-light-red">
+        <div class="mid-container flex ">
 
             <!-- Inizio header  -->
             <div class= "header  bg-light-green">
@@ -59,7 +73,7 @@
             <!-- Inizio main  -->
             <main  class="flex ">
                 <!-- Inizio Nav con le categorie  -->
-                <nav class="flex nav-main bg-brownish wrap flex-center padding-vert-10 font-size-12">
+                <nav class="flex nav-main  wrap flex-center padding-vert-10 font-size-12">
                     <a class=" nav-item no-deco white padding-side-5 " href="#">IN EVIDENZA</a>
                     <a class=" nav-item no-deco white padding-side-5 " href="#"> PODCAST</a>
                     <a class=" nav-item no-deco white padding-side-5 " href="#"> CLASSIFICHE</a>
@@ -69,89 +83,89 @@
                 </nav>
                 <!-- Fine nav con le categorie  -->
                 <div class="title-container"  >
-                    <h2 class="padding-vert-20 padding-side-20 font-size-20">Recently played</h2>
+                    <h2 class="padding-top-10 padding-bottom-10 padding-side-20 font-size-20 white">Recently played</h2>
                 </div>
                 <!-- inizio Spazio  contenente blocchi con copertina brano e titolo  -->
-                <div class="main-content bg-dark-blue flex wrap">
+                <div class="main-content padding-side-15 flex wrap">
                 <!-- Blocco con copertina brano e titolo  -->
-                    <div class="main-content-item bg-yellow flex">
+                    <div class="main-content-item flex ">
                         <!-- Copertina  -->
                         <div class="img-box flex flex-column">
                             <img src="./img/metal_lifting.jpg" alt="heavy  metal cover">
                             <!-- Titolo  -->
                             <div class="text-box padding-top-20 ">
-                                <h3 class="text-center "> Title</h3>
-                                <h4 class="text-center ">Subtitle</h4>
+                                <h3 class="text-center white "> Title</h3>
+                                <h4 class="text-center white ">Subtitle</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Fine blocco con copertina brano e titolo  -->
                     
                 <!-- Blocco con copertina brano e titolo  -->
-                    <div class="main-content-item bg-yellow flex">
+                    <div class="main-content-item flex">
                         <!-- Copertina  -->
                         <div class="img-box flex flex-column">
                             <img src="./img/metal_lifting.jpg" alt="heavy  metal cover">
                             <!-- Titolo  -->
                             <div class="text-box padding-top-20 ">
-                                <h3 class="text-center "> Title</h3>
-                                <h4 class="text-center ">Subtitle</h4>
+                                <h3 class="text-center white "> Title</h3>
+                                <h4 class="text-center white ">Subtitle</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Fine blocco con copertina brano e titolo  -->
                     
                 <!-- Blocco con copertina brano e titolo  -->
-                    <div class="main-content-item bg-yellow flex">
+                    <div class="main-content-item flex">
                         <!-- Copertina  -->
                         <div class="img-box flex flex-column">
                             <img src="./img/metal_lifting.jpg" alt="heavy  metal cover">
                             <!-- Titolo  -->
                             <div class="text-box padding-top-20 ">
-                                <h3 class="text-center "> Title</h3>
-                                <h4 class="text-center ">Subtitle</h4>
+                                <h3 class="text-center white "> Title</h3>
+                                <h4 class="text-center white ">Subtitle</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Fine blocco con copertina brano e titolo  -->
                     
                 <!-- Blocco con copertina brano e titolo  -->
-                    <div class="main-content-item bg-yellow flex">
+                    <div class="main-content-item flex">
                         <!-- Copertina  -->
                         <div class="img-box flex flex-column">
                             <img src="./img/metal_lifting.jpg" alt="heavy  metal cover">
                             <!-- Titolo  -->
                             <div class="text-box padding-top-20 ">
-                                <h3 class="text-center "> Title</h3>
-                                <h4 class="text-center ">Subtitle</h4>
+                                <h3 class="text-center white "> Title</h3>
+                                <h4 class="text-center white ">Subtitle</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Fine blocco con copertina brano e titolo  -->
                     
                 <!-- Blocco con copertina brano e titolo  -->
-                    <div class="main-content-item bg-yellow flex">
+                    <div class="main-content-item flex">
                         <!-- Copertina  -->
                         <div class="img-box flex flex-column">
                             <img src="./img/metal_lifting.jpg" alt="heavy  metal cover">
                             <!-- Titolo  -->
                             <div class="text-box padding-top-20 ">
-                                <h3 class="text-center "> Title</h3>
-                                <h4 class="text-center ">Subtitle</h4>
+                                <h3 class="text-center white "> Title</h3>
+                                <h4 class="text-center white ">Subtitle</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Fine blocco con copertina brano e titolo  -->
                     
                 <!-- Blocco con copertina brano e titolo  -->
-                    <div class="main-content-item bg-yellow flex">
+                    <div class="main-content-item flex">
                         <!-- Copertina  -->
                         <div class="img-box flex flex-column">
                             <img src="./img/metal_lifting.jpg" alt="heavy  metal cover">
                             <!-- Titolo  -->
                             <div class="text-box padding-top-20 ">
-                                <h3 class="text-center "> Title</h3>
-                                <h4 class="text-center ">Subtitle</h4>
+                                <h3 class="text-center white "> Title</h3>
+                                <h4 class="text-center white ">Subtitle</h4>
                             </div>
                         </div>
                     </div>
@@ -171,8 +185,28 @@
         
     </div>
 
-    <footer  class= "flex bg-light-blue">
+    <footer  class= "flex bg-light-blue flex">
+        <div class="footer-sx flex align-center">
+            <div class="brano-img brano-item">
+                <img class="cover" src="./img/sinister.jpeg" alt="">
+            </div>
+            <div class="brano-text brano-item white font-size-10">
+                <h4>Sinister</h4>
+                <div>Brano</div>
+                <div>Nome</div>
+            </div>
+            <div class="brano-icon brano-item flex flex-column white">
+                <i class="far fa-heart "></i>
+                <i class="far fa-folder"></i>
+            </div>
 
+        </div>
+        <div class="footer-mid">
+            
+        </div>
+        <div class="footer-dx">
+            
+        </div>
     </footer>
 
 </body>
