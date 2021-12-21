@@ -8,7 +8,8 @@
 }
 
 html{
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+scroll-behavior: smooth;}
 
 body{
     height: 100vh;
@@ -151,9 +152,14 @@ h4{
 aside{
 width: 50px;
 height: 100%;
-z-index: 999;
+z-index: 999999999999999;
 justify-content: space-between;
 }
+
+.aside-mid.flex.flex-column, .playlist, .crea-play, .playlists{
+    display: none;
+}
+
 
 .aside-top-item, .aside-bottom-item{
     width: 30px;
@@ -162,20 +168,35 @@ justify-content: space-between;
     align-items: center;
 }
 
+.aside-text{
+    display: none;
+}
+
 #download{
     width: 18px;
 }
 
-#account{
+#account img{
 background-color: #929292
 ;
 border-radius: 50%;
-overflow: hidden;
+padding: 2px 0;
 }
 
-#account{
+#account {
 padding: 0 4px;
 margin-bottom: 10px;
+}
+
+.john{
+    display: none;
+}
+
+#logo-big{
+    display: none;
+}
+.installa{
+    display: none;
 }
 /* fine aside  */
 
@@ -269,5 +290,135 @@ height: 35px;
         display: flex;
     }
     
-    
+    aside{
+        width: 200px;
+        height: 100%;
+        z-index: 999999999999999;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-top: 10px;
+        }
+        
+        .aside-top-item{
+            display: flex;
+            align-items: flex-end;
+            padding: 5px 0;
+            transform: scale(0.8);
+        }
+
+        .aside-text{
+            display: block;
+        }
+
+        .aside-top, .aside-bottom{
+            align-items: center;
+            align-items: flex-start;
+        }
+
+        .mid-aside-text{
+            padding: 10px 0;
+        }
+        
+        .aside-mid.flex.flex-column, .playlist, .crea-play{
+            display: flex
+        }
+        
+        .playlists{
+            display: block;
+        }
+        
+
+        .aside-mid{
+            padding: 5px 0;
+            overflow-y: scroll;
+            padding-left: 5px;
+        }
+
+        .aside-mid-item{
+            font-size: 10px;
+            color: #B3B3B3;
+            font-weight: 900;
+
+        }
+        
+        .playlists{
+            overflow-y: scroll;
+        }
+
+        .playlist{
+            font-weight: 900;
+            padding-left: 5px;
+        }
+
+        .crea-play{
+            font-weight: 900;
+            font-size: 12px;
+        }
+
+        .fa-plus-square{
+            padding-right: 5px;
+            font-size: 25px;
+        }
+
+        #download{
+            width: 18px;
+        }
+        
+        #account{
+        background-color: #929292
+        ;
+        border-radius: 50%;
+        
+        
+        margin-bottom: 5px;
+        align-items: center;
+        transform: scale(0.8);
+
+        }
+
+        #account img{
+            transform: scale(0.8);
+
+        }
+
+        .john{
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: 900;
+            padding-left: 10px;
+        }
+        
+        #logo {display: none;
+            
+        }
+
+        #logo-big{
+            display: flex;
+            width: 100%;
+        }
+
+        .first-item{
+            width: 100%;
+            padding-right: 10px;
+        }
+
+        .installa{
+            display: flex;
+            white-space: nowrap;
+            padding-left: 5px;
+            font-size: 11px;
+        }
+
+        #download{
+            display: flex;
+            align-items: center;
+        }
+
+        .hr.white{
+            width: 90%;
+            margin-bottom: 10px;
+            
+        }
+
+        
 }

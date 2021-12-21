@@ -189,6 +189,10 @@ justify-self: center;
     align-items: center;
 }
 
+.align-end{
+    align-items: flex-end;
+}
+
 .justify-center{
     justify-content: center;
 }
@@ -560,7 +564,7 @@ justify-self: center;
 /* fine -line-height  */
 
 /* -font-weight */
-.bold-600{
+.bold{
     font-weight: 600;
 }
 /* fine -font-weight */
