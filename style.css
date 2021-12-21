@@ -104,6 +104,16 @@ justify-content: flex-start;
 width: 100%;
 }
 
+.text-box h3{
+    font-size: 13px;
+}
+
+.text-box h4{
+    font-size: 8px;
+    white-space: nowrap;
+    padding-top: 10px;
+    color: #5B5E62;
+}
 /* .text-box{
     width: 20vh;
 } */
