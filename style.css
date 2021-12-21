@@ -44,6 +44,7 @@ justify-content: flex-end;
 align-items: center;
 padding-right: 10px;
 background-color: #090B12;
+z-index: 9999999;
 }
 
 .header-btn{
@@ -75,14 +76,36 @@ flex-direction: column;
     line-height: 30px;
 }
 
-.nav-main a{
+.nav-main span{
     color: #B3B3B3;
     font-size: 10px;
-
+    position: relative;
 }
+
+.sottolinea{
+    height: 1px;
+    width: 50%;
+    border: 2px solid #151921;
+    position: absolute;
+    left: 25%;
+    bottom: 7%;
+    border-radius: 5px;
+}
+
+.active{
+    height: 1px;
+    width: 50%;
+    border: 2px solid #C2FA5D;
+    position: absolute;
+    left: 25%;
+    bottom: 7%;
+    border-radius: 5px;
+}
+
 
 .nav-item{
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .main-content{
@@ -110,7 +133,7 @@ width: 100%;
     font-size: 12px;
 }
 
-.text-box h4{
+h4{
     font-size: 8px;
     white-space: nowrap;
     padding-top: 10px;

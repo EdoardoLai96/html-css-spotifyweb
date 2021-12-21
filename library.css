@@ -131,6 +131,9 @@ width: 15vw;
     width: 10%;
 }
 
+.min-cont{
+    width: min-content;
+}
 
 /*Fine -Width  */
 
@@ -446,8 +449,12 @@ justify-self: center;
     border:  10px solid #D5E8CF;
 }
 
-.border-radius-5px{
+.radius-5px{
     border-radius: 5px;
+}
+
+.radius-50xc{
+    border-radius: 50%;
 }
 
 /* FINE -BORDERDS  */
@@ -590,6 +597,10 @@ text-decoration: underline;
 
 .scroll{
     overflow: scroll;
+}
+
+.ov-hidden{
+    overflow: hidden;
 }
 
 /* FINE MODIFIERS */
