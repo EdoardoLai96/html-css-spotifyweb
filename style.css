@@ -157,18 +157,24 @@ width: 100%;
 justify-content: space-between;
 background-color: #313131;
 }
-.footer-element{
-    width: calc(100% / 3);
-}
 
 .footer-mid{
     justify-content: space-evenly;
+    width: 50%;
+}
+
+.footer-sx, .footer-dx{
+    width: 25%;
+    
 }
 
 .music-player{
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
 }
+.music-player i{
+    padding: 0 5px;
+}
+
 .barra-container{
     flex-basis:60%;
     justify-self: center;
@@ -197,7 +203,8 @@ background-color: #313131;
 .brano-img{
     height: 35px;
     width: 35px;
-    margin: 0 15px
+    margin: 0 15px;
+    min-width: 20px;
 }
 
 .brano-icon{
