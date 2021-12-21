@@ -100,7 +100,7 @@ flex-direction: column;
 
 
 .img-box{
-justify-content: center;
+justify-content: flex-start;
 width: 100%;
 }
 
