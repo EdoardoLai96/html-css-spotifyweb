@@ -180,12 +180,18 @@ justify-content: space-between;
 background-color: #929292
 ;
 border-radius: 50%;
-padding: 2px 0;
+padding: 2px 4px;
+transform: scale(1.1);
 }
 
 #account {
 padding: 0 4px;
 margin-bottom: 10px;
+transform: scale(0.8);
+}
+
+.white.hr{
+    display: none;
 }
 
 .john{
@@ -341,9 +347,6 @@ height: 35px;
 
         }
         
-        .playlists{
-            overflow-y: scroll;
-        }
 
         .playlist{
             font-weight: 900;
@@ -377,8 +380,7 @@ height: 35px;
         }
 
         #account img{
-            transform: scale(0.8);
-
+            padding: 0;
         }
 
         .john{
@@ -386,6 +388,7 @@ height: 35px;
             font-size: 12px;
             font-weight: 900;
             padding-left: 10px;
+            display: block;
         }
         
         #logo {display: none;
@@ -417,7 +420,11 @@ height: 35px;
         .hr.white{
             width: 90%;
             margin-bottom: 10px;
+            display: block;
             
+        }
+        .aside-top{
+            align-items: flex-start;
         }
 
         
