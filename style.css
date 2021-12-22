@@ -36,7 +36,6 @@ body{
 /* Inizio header  */
 .header{
 height: 70px;
-width: 100%;
 position: fixed;
 top: 0;
 right: 0;
@@ -45,7 +44,6 @@ justify-content: flex-end;
 align-items: center;
 padding-right: 10px;
 background-color: #090B12;
-z-index: 9999999;
 }
 
 .header-btn{
@@ -152,7 +150,6 @@ h4{
 aside{
 width: 50px;
 height: 100%;
-z-index: 999999999999999;
 justify-content: space-between;
 }
 
@@ -215,6 +212,7 @@ position: fixed;
 bottom: 0;
 width: 100%;
 background-color: #313131;
+z-index: 999999999999;
 }
 
 .footer-mid{
@@ -281,6 +279,10 @@ height: 35px;
 
 .brano-icon.brano-item{
     display: none;
+}
+
+.brano-text h4{
+    padding-top: 0;
 }
 /* Media queries */
 
@@ -403,6 +405,7 @@ height: 35px;
         .first-item{
             width: 100%;
             padding-right: 10px;
+            transform: scale(1);
         }
 
         .installa{
