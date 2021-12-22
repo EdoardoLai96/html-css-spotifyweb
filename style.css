@@ -296,6 +296,7 @@ height: 35px;
 
     .brano-icon.brano-item{
         display: flex;
+        flex-direction: column;
     }
     
     aside{
@@ -303,14 +304,12 @@ height: 35px;
         height: 100%;
         z-index: 999999999999999;
         justify-content: space-between;
-        padding-left: 20px;
         padding-top: 10px;
         }
         
         .aside-top-item{
             display: flex;
             align-items: flex-end;
-            padding: 5px 0;
             transform: scale(0.8);
         }
 
@@ -319,12 +318,15 @@ height: 35px;
         }
 
         .aside-top, .aside-bottom{
-            align-items: center;
             align-items: flex-start;
         }
 
+        .aside-bottom{
+            padding-top: 80px;
+        }
+
         .mid-aside-text{
-            padding: 10px 0;
+            padding: 5px 0;
         }
         
         .aside-mid.flex.flex-column, .playlist, .crea-play{
@@ -430,5 +432,33 @@ height: 35px;
             align-items: flex-start;
         }
 
+        .flex.nav-main.wrap{
+            justify-content: space-around;
+        }
+    
+
         
+}
+
+@media screen and (min-width: 769px) {
+
+    .main-content-item{
+      width: calc(100% / 4 );
+    }
+    
+    .main-content{
+    justify-content: flex-start;  
+    }
+      
+    .brano-icon.brano-item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .brano-icon.brano-item .fa-heart{
+        margin-right: 10px;
+    }
+
+  
 }
