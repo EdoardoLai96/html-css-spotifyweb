@@ -57,6 +57,12 @@ background-color: #090B12;
     font-weight: 900;
     
 }
+
+.header-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* fine header  */
 
 /* inizio main  */
@@ -126,6 +132,29 @@ flex-direction: column;
 .img-box{
 justify-content: flex-start;
 width: 100%;
+position: relative;
+}
+
+.img-box img{
+object-fit: cover;
+width: 100%;
+}
+
+.img-box .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+
+.overlay i{
+font-size: 50px;
+position: absolute;
+color: white;
 }
 
 .text-box h3{
@@ -168,6 +197,18 @@ justify-content: flex-start;
 .aside-text{
     display: none;
 }
+
+
+.hover-white:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.hover-underline:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
 
 #download{
     width: 18px;
@@ -220,13 +261,21 @@ z-index: 999999999999;
     flex-basis: 70%;
 }
 
-.footer-sx, .footer-dx{
-    
-}
 
 .footer-dx.footer-element{
     display: none;
 
+}
+
+.cursore-palla{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    right: -3px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: none;
 }
 
 .music-player{
@@ -248,6 +297,16 @@ z-index: 999999999999;
     align-self: center;
     border: 2px solid #C1C1C1;
     border-radius: 5px;
+    position: relative;
+}
+
+.barra-1:hover .cursore-palla{
+    display: block;
+}
+
+.barra-1:hover{
+    border: 2px solid #C2FA5D;
+    cursor: pointer;
 }
 
 .barra-2{
@@ -281,13 +340,35 @@ height: 35px;
     display: none;
 }
 
+.brano-e-nome-container{
+    flex-direction: column;
+    font-size: 8px;
+    color: #A3A3A3;
+}
+
+
+.fa-heart , .fa-folder{
+    color: #A3A3A3;
+}
+
 .brano-text h4{
     padding-top: 0;
+}
+
+.music-player .fa-play-circle:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 /* Media queries */
 
 @media screen and (min-width: 577px) {
     
+    .img-box:hover .overlay{
+    display: flex;
+    cursor: pointer;
+        
+    }
+
     .footer-dx.footer-element{
         display: flex;
         flex-basis: 30%;
@@ -312,7 +393,15 @@ height: 35px;
             display: flex;
             align-items: flex-end;
             transform: scale(0.8);
+            color: #A3A3A3;
         }
+
+        .aside-top-item span{ 
+            
+            color: #A3A3A3;
+        }
+
+
         .marginino{
             height: 30px;
             border-left: 3px solid #C2FA5D;
@@ -354,7 +443,7 @@ height: 35px;
 
         .aside-mid-item{
             font-size: 10px;
-            color: #B3B3B3;
+            color: #A3A3A3;
             font-weight: 900;
 
         }
@@ -378,6 +467,12 @@ height: 35px;
         #download{
             width: 18px;
         }
+
+        #download:hover .installa, .installa-img{
+            color: white;
+            cursor: pointer;
+        }
+
         
         #account{
         background-color: #929292
@@ -418,11 +513,17 @@ height: 35px;
             transform: scale(1);
         }
 
+        #download:hover .installa, .installa-img{
+            color: white;
+            cursor: pointer;
+        }
+
         .installa{
             display: flex;
             white-space: nowrap;
             padding-left: 5px;
             font-size: 11px;
+            color: #A3A3A3;
         }
 
         #download{
@@ -442,6 +543,14 @@ height: 35px;
 
         .flex.nav-main.wrap{
             justify-content: center;
+        }
+
+        .brano-e-nome-container{
+            flex-direction: row;
+        }
+    
+        .brano-e-nome-container div:first-child{
+            padding-right: 3px;
         }
     
 
