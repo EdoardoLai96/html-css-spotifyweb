@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     width: calc(100% - 50px);
     background-color: #151921 ;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-top: 70px;
 }
 /* Fine common */
@@ -305,12 +305,20 @@ height: 35px;
         z-index: 999999999999999;
         justify-content: space-between;
         padding-top: 10px;
+        padding-left: 15px;
         }
         
         .aside-top-item{
             display: flex;
             align-items: flex-end;
             transform: scale(0.8);
+        }
+        .marginino{
+            height: 30px;
+            border-left: 3px solid #C2FA5D;
+            position: absolute;
+            left: -21px;
+
         }
 
         .aside-text{
